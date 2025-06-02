@@ -1,11 +1,32 @@
 .weather {
-    background-color: rgb(149, 226, 226);
-    padding: 10px;
-    margin: 10px 20px;
+    background-color: rgba(149, 226, 226, 0.8);
+    padding: 16px;
+    margin: 30px auto;
+    
     color: teal;
     border: 1px solid black;
+    border-radius: 2%;
 }
 
-ul {
-    list-style-type: none;
+.head {
+    background-color: blue;
+    text-align: center;
+    color: wheat;
+    border-radius: 10px;
+    margin: 10px 20px;
+
+}    
+  
+.weather form {
+    margin: 20px;
 }
+
+.weather h1 {
+    margin: 0;
+}
+.weather ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+} 

@@ -4,6 +4,9 @@ import './Weather.css'
 export default function Weather(){
     return (
         <div className='weather'>
+            <div className="head primary">
+                <h2>The Weather today and beyond</h2>
+            </div>
             <form>
                 <div className="row">
                     <div className="col-9">
@@ -16,7 +19,7 @@ export default function Weather(){
                         <input 
                             type="submit" 
                             value="Search" 
-                            className="btn btn-primary"/>
+                            className="btn btn-primary w-100"/>
                     </div>
                 </div>
             </form>
@@ -28,7 +31,7 @@ export default function Weather(){
             <div className="row">
                 <div className="col-6">
                     <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt="Mostly cloudy" />
-                    14 C|F
+                    14 °C|°F
                 </div>
                 <div className="col-6">
                     <ul>
