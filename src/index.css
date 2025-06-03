@@ -1,5 +1,5 @@
 body {
     font-family: arial, sans-serif;
     background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/167/160/original/IMG_5262.jpeg?1748845254');
-   
+    background-size: cover;
 }
