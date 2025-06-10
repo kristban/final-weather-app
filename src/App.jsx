@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Weather from './Weather'
+
 import './App.css'
 
 export default function App() {
@@ -7,7 +8,7 @@ export default function App() {
     <div className="App">
       <div className="container">
         
-        <Weather />
+        <Weather defaultCity="Bernburg"/>
         <footer>
           This project was coded by Kristin and is{" "}
           <a href="https://github.com/kristban/final-weather-app" target="blank">open-sourced on Github</a>
