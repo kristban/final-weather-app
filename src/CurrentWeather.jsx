@@ -26,7 +26,7 @@ export default function CurrentWeather(props) {
                             
                             <div >
                                 <span className="temperature">{Math.round(props.info.temperature)}</span> 
-                                <span className="unit">°C|°F</span>
+                                <span className="unit">°C</span>
                             </div>
                         </div>
                     </div>
