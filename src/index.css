@@ -1,8 +1,6 @@
 body {
     font-family: "Lucida Console", "Courier New", monospace;
-    background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/167/591/original/IMG_5268.jpeg?1749390298');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: rgb(46, 105, 119)
 }
 
 h1 {
@@ -10,12 +8,20 @@ h1 {
 }
 
 footer {
-    margin-top: 50px;
+    font-size: 0.8em;
     text-align: center;
-    position: fixed;
-    width: 100%;
-    padding: 50px;
-    bottom: 5px;
-    background-color: wheat;
-    z-index: 5;
-} 
+    margin-top: 20px;
+    color: rgb(205, 170, 78);
+}
+
+a {
+    color: rgb(205, 170, 78);
+    font-weight: bold;
+}
+
+hr {
+    
+    height: 1px;
+    background-color: rgb(46, 105, 119);
+    margin: 20px 25px;
+}

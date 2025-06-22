@@ -43,7 +43,7 @@ export default function Weather(props){
                             <input 
                                 type="submit" 
                                 value="Search" 
-                                className="btn btn-primary w-100"/>
+                                className="btn  w-100"/>
                         </div>
                     </div>
                 </form>
@@ -63,8 +63,3 @@ export default function Weather(props){
     
     
 }
-
-/*
-Sort out temperature size
-9:00 min - React Weather Project / CSS
-*/

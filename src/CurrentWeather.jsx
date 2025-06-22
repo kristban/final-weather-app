@@ -4,13 +4,16 @@ import FormattedDate from './FormattedDate'
 export default function CurrentWeather(props) {
     return (
         <div className="CurrentWeather">
-            <h1>{props.info.city}, {props.info.country}</h1>
-            <ul>
-                <li>
-                    <FormattedDate dates={props.info.date} />
-                </li>
-                <li className="text-capitalize">{props.info.condition}</li>
-            </ul>
+            <div className="FirstPart">
+                <h1>{props.info.city}, {props.info.country}</h1>
+                <ul>
+                    <li>
+                        <FormattedDate dates={props.info.date} />
+                    </li>
+                    <li className="text-capitalize">{props.info.condition}</li>
+                </ul>
+            </div>
+            <hr/>
                 <div className="row">
                     <div className="col-6">
                         <div className="d-flex">
