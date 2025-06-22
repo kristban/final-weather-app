@@ -15,7 +15,7 @@ export default function CurrentWeather(props) {
             </div>
             <hr/>
                 <div className="row">
-                    <div className="col-6">
+                    <div className="col-7">
                         <div className="d-flex">
                             
                                 <img 
@@ -30,7 +30,7 @@ export default function CurrentWeather(props) {
                             </div>
                         </div>
                     </div>
-                    <div className="col-6">
+                    <div className="col-5">
                         <ul>
                             <li>Humidity: {props.info.humidity} %</li>
                             <li>Wind: {props.info.wind} km/h</li>
