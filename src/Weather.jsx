@@ -11,7 +11,6 @@ export default function Weather(props){
 
     function handleResponse(response) {
         setWeatherData({
-            
             city: response.data.city,
             country: response.data.country,
             date: new Date(response.data.time * 1000),
@@ -45,7 +44,7 @@ export default function Weather(props){
         return (
             <div className='weather'>
                 <div className="head">
-                    <h2>The Weather</h2>
+                    <h1>The Weather</h1>
                     <h4>today and beyond</h4>
                 </div>
                 <form onSubmit={handleSubmit}>

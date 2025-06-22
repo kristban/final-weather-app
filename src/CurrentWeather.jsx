@@ -5,7 +5,7 @@ export default function CurrentWeather(props) {
     return (
         <div className="CurrentWeather">
             <div className="FirstPart">
-                <h1>{props.info.city}, {props.info.country}</h1>
+                <h2>{props.info.city}, {props.info.country}</h2>
                 <ul>
                     <li>
                         <FormattedDate dates={props.info.date} />
