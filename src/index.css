@@ -1,8 +1,12 @@
 body {
-    font-family: arial, sans-serif;
+    font-family: "Lucida Console", "Courier New", monospace;
     background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/167/591/original/IMG_5268.jpeg?1749390298');
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+h1 {
+    font-weight: 800;
 }
 
 footer {

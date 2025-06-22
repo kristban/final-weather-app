@@ -1,5 +1,5 @@
 .weather {
-    background-color: rgba(149, 226, 226, 0.9);
+    background-color: rgba(149, 226, 226, 0.5);
     padding: 16px;
     margin: 30px auto;
     color: teal;
@@ -27,7 +27,6 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    
 } 
 
 .weather .temperature {

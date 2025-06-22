@@ -31,7 +31,7 @@ export default function Weather(props){
                 </div>
                 <form>
                     <div className="row">
-                        <div className="col-6">
+                        <div className="col-9">
                             <input 
                                 type="search" 
                                 placeholder="Enter your City..." 
@@ -39,7 +39,7 @@ export default function Weather(props){
                                 autoFocus="on"
                             />
                         </div>
-                        <div className="col-6">
+                        <div className="col-3">
                             <input 
                                 type="submit" 
                                 value="Search" 
