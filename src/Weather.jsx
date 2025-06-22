@@ -5,10 +5,13 @@ import CurrentWeather from './CurrentWeather'
 import './Weather.css'
 
 export default function Weather(props){
-    const [ready, setReady] = useState(false)
-    const [weatherData, setWeatherData] = useState({})
+    const [ready, setReady] = useState(false);
+    const [weatherData, setWeatherData] = useState({});
+    const [location, setLocation] = useState(props.defaultLocation);
+
     function handleResponse(response) {
         setWeatherData({
+            
             city: response.data.city,
             country: response.data.country,
             date: new Date(response.data.time * 1000),
@@ -20,16 +23,32 @@ export default function Weather(props){
             degree: response.data.wind.degree,
         })
         
-        setReady(true)
+        setReady(true);
+    }
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        search();
+    }
+
+    function handleLocationEntry(event) {
+        setLocation(event.target.value);
+    }
+
+    function search() {
+        const apiKey = "7a9df9a4f940btc116d43db796o3aa67"
+        let apiURL = `https://api.shecodes.io/weather/v1/current?query=${location}&key=${apiKey}&units=metric`
+        axios.get(apiURL).then(handleResponse)
     }
 
     if (ready) {
         return (
             <div className='weather'>
                 <div className="head">
-                    <h2>The Weather today and beyond</h2>
+                    <h2>The Weather</h2>
+                    <h4>today and beyond</h4>
                 </div>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <div className="row">
                         <div className="col-9">
                             <input 
@@ -37,6 +56,7 @@ export default function Weather(props){
                                 placeholder="Enter your City..." 
                                 className="form-control"
                                 autoFocus="on"
+                                onChange={handleLocationEntry}
                             />
                         </div>
                         <div className="col-3">
@@ -47,19 +67,12 @@ export default function Weather(props){
                         </div>
                     </div>
                 </form>
-                <CurrentWeather info={weatherData}/>
+                <CurrentWeather info={weatherData} />
                 
-                </div>
+            </div>
         );
     } else {
-        const apiKey = "7a9df9a4f940btc116d43db796o3aa67"
-        
-        let apiURL = `https://api.shecodes.io/weather/v1/current?query=${props.defaultCity}&key=${apiKey}&units=metric`
-        axios.get(apiURL).then(handleResponse)
-
-        return "Loading..."
+        search();
+        return "Loading...";
     }
-
-    
-    
 }

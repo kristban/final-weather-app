@@ -19,7 +19,9 @@
 .weather form {
     margin: 20px;
 }
-
+input[type="placeholder"] {
+    color: rgb(46, 105, 119);
+}
 .btn {
     background-color: rgb(46, 105, 119);
     color: rgb(205, 170, 78);
