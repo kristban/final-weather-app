@@ -17,6 +17,7 @@ export default function Weather(props){
             temperature: response.data.temperature.current,
             humidity: response.data.temperature.humidity, 
             wind: response.data.wind.speed,
+            degree: response.data.wind.degree,
         })
         
         setReady(true)
@@ -30,13 +31,15 @@ export default function Weather(props){
                 </div>
                 <form>
                     <div className="row">
-                        <div className="col-9">
+                        <div className="col-6">
                             <input 
                                 type="search" 
                                 placeholder="Enter your City..." 
-                                className="form-control"/>
+                                className="form-control"
+                                autoFocus="on"
+                            />
                         </div>
-                        <div className="col-3">
+                        <div className="col-6">
                             <input 
                                 type="submit" 
                                 value="Search" 
@@ -60,3 +63,8 @@ export default function Weather(props){
     
     
 }
+
+/*
+Sort out temperature size
+9:00 min - React Weather Project / CSS
+*/

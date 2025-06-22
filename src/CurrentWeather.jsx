@@ -14,11 +14,16 @@ export default function CurrentWeather(props) {
                 <div className="row">
                     <div className="col-6">
                         <div className="d-flex">
-                            <div>
-                                <img src={props.info.iconUrl} alt="Mostly cloudy" size={52}/>
-                            </div>
-                            <div>
-                                {Math.round(props.info.temperature)} °C|°F
+                            
+                                <img 
+                                    src={props.info.iconUrl} 
+                                    alt="Mostly cloudy" 
+                                    size={52}
+                                    />
+                            
+                            <div >
+                                <span className="temperature">{Math.round(props.info.temperature)}</span> 
+                                <span className="unit">°C|°F</span>
                             </div>
                         </div>
                     </div>
@@ -26,9 +31,12 @@ export default function CurrentWeather(props) {
                         <ul>
                             <li>Humidity: {props.info.humidity} %</li>
                             <li>Wind: {props.info.wind} km/h</li>
+                            <li>Direction: {props.info.degree} degree</li>
                         </ul>
                     </div>
                 </div>
         </div>
     )
 }
+
+//3:50 - React Weather Project / Search Engine
