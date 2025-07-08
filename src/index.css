@@ -16,8 +16,11 @@ footer {
     margin-top: 20px;
     color: rgb(205, 170, 78);
 }
-
 a {
+    color: rgb(46, 105, 119)
+}
+
+footer a {
     color: rgb(205, 170, 78);
     font-weight: bold;
 }
