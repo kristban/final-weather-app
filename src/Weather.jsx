@@ -3,6 +3,7 @@ import axios from 'axios'
 
 import CurrentWeather from './CurrentWeather'
 import './Weather.css'
+import WeatherForecast from './WeatherForecast';
 
 export default function Weather(props){
     const [ready, setReady] = useState(false);
@@ -67,7 +68,8 @@ export default function Weather(props){
                     </div>
                 </form>
                 <CurrentWeather info={weatherData} />
-                
+                <hr/>
+                <WeatherForecast />
             </div>
         );
     } else {
